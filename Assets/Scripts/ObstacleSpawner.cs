@@ -1,13 +1,14 @@
 ﻿﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //This script manages the spawning of obstacles
 public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject Obstacle = null;
     [SerializeField] private float SpawnInterval = 1;
-    private float NextSpawn = 0;
+    private float NextSpawn ;
 
     void Update()
     {
